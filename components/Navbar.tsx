@@ -1,6 +1,7 @@
 import { Icon, Link } from "lucide-react";
 import React from "react";
 import styled from "styled-components"
+import Image from 'next/image';
 
 const Section = styled.div`
   display: flex;
@@ -34,10 +35,16 @@ export default function Navbar() {
     <Section>
       <Container>
         <Links className="text-2xl font-bold">
-        CollinsCo.
+          CollinsCo.
         </Links>
         <Icons>
-          <img src="/menu.png"  />
+          <Image 
+            src="/menu.png" 
+            alt="menu"
+            width={40}
+            height={40}
+            className="dark:invert"
+          />
         </Icons>
       </Container>
     </Section>

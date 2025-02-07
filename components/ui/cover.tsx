@@ -48,7 +48,7 @@ export const Cover = ({
             exit={{ opacity: 0 }}
             transition={{
               opacity: {
-                duration: 0.2,
+                duration: 0.1,
               },
             }}
             className="h-full w-full overflow-hidden absolute inset-0"
@@ -59,7 +59,7 @@ export const Cover = ({
               }}
               transition={{
                 translateX: {
-                  duration: 10,
+                  duration: 5,
                   ease: "linear",
                   repeat: Infinity,
                 },
