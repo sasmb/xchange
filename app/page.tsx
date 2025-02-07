@@ -5,7 +5,8 @@ import { Hero } from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Who from "@/components/Who";
 import Works from "@/components/Works";
-import Contact from "@/components/Contact";
+import Contact from "@/components/Contact";   
+import { MouseMaskEffect } from "@/components/ui/mouse-mask-effect";
 
 const Container = styled.div`
   height: 100vh;
@@ -15,16 +16,18 @@ const Container = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-
 `
 
 export default function Home() {
   return (
-    <Container >
-      <Hero />
-      <Who />
-      <Works />
-      <Contact />
-    </Container>
+    <>
+      <MouseMaskEffect />
+      <Container>
+        <Hero />
+        <Who />
+        <Works />
+        {/* <Contact /> */}
+      </Container>
+    </>
   );
 }

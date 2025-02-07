@@ -28,20 +28,18 @@ export function Hero() {
         <Button
           borderRadius="1.75rem"
           containerClassName="w-auto min-w-[10rem]"
-          className="flex items-center justify-center bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 px-6"
+          className="flex font-calsans font-light items-center justify-center bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 px-6"
         >
           New to crypto? ⚡ Get started here.
         </Button>
-        <br />
-        <div className="text-4xl md:text-7xl font-bold dark:text-white text-center">
-        Seamless Currency Exchange.<br/> Secure. Fast. Reliable.
+        <div className="text-4xl md:text-7xl font-calsans dark:text-white text-center">
+        Seamless Currency Exchange<br/> Secure. Fast. Reliable
         </div>
-        <br/> 
         <div className="flex flex-col font-extralight text-base md:text-1,5xl dark:text-neutral-200 py-4">
          Exchange currencies with confidence. Get the best rates, low fees, and fast transactions
         </div>
-        <br/> 
-        <div className="flex gap-4">
+        <br />
+        <div className="flex gap-4 font-calsans">
         <button className="p-[3px] relative">
           <div className="absolute inset-0 bg-gradient-to-r from-sky-500 to-sky-400 rounded-lg" />
           <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
@@ -63,7 +61,7 @@ export function Hero() {
           duration: 1.2,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
+        className="relative flex flex-col gap-4 items-center justify-center px-4 font-calsans"
       >
         <Logotable />
         </motion.div>

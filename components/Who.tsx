@@ -5,6 +5,8 @@ import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import styled from "styled-components"
 import { Cover } from "@/components/ui/cover";
+import { motion } from "framer-motion";
+import { Button } from "./ui/moving-border";
 
 const Section = styled.div`
   min-height: 100vh;
@@ -50,94 +52,117 @@ const Compo = styled.div`
   padding: 0 1rem;
   margin-bottom: 2rem;
 `
-
+const StyledImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  animation: animate 2s infinite ease alternate;
+  @keyframes animate {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  &:hover {
+    animation-play-state: paused;
+  }
+`
 
 export default function Who() {
   const dummyContent = [
     {
-      title: "Lorem Ipsum Dolor Sit Amet",
+      title: "Step 1: Enter Amount",
       description: (
         <>
           <p>
-            Sit duis est minim proident non nisi velit non consectetur. Esse
-            adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-            Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-            incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-            fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-            nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-            occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-            officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-            commodo et labore dolore commodo pariatur.
+            Start by entering the amount you want to exchange. Whether you're 
+            exchanging a small sum or a large amount, our platform provides 
+            competitive rates with zero hidden fees.
           </p>
           <p>
-            Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-            veniam in commodo id reprehenderit adipisicing. Proident duis
-            exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
-          </p>
-          <p>
-            Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-            reprehenderit deserunt amet laborum consequat adipisicing officia qui
-            irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-            Amet culpa officia aliquip deserunt veniam deserunt officia
-            adipisicing aliquip proident officia sunt.
+            Simply input the amount, and we'll show you the best available 
+            exchange rate in real time.
           </p>
         </>
       ),
-      badge: "React",
-      image: "/globe.svg",
+      badge: "Amount",
+      image: "/money.svg",
     },
     {
-      title: "Lorem Ipsum Dolor Sit Amet",
+      title: "Step 2: Choose Currency",
       description: (
         <>
           <p>
-            Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-            deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-            non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-            sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-            velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-            commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+            Select the currency you want to exchange into. We support a wide 
+            range of currencies, ensuring you get the best exchange rates 
+            no matter where you're sending or receiving money.
           </p>
           <p>
-            In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-            veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-            reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-            cillum ut mollit.
+            Compare rates instantly and lock in the best deal for your transaction.
           </p>
         </>
       ),
-      badge: "Changelog",
-      image: "/file.svg",
+      badge: "Currency",
+      image: "/currency.svg",
     },
     {
-      title: "Lorem Ipsum Dolor Sit Amet",
+      title: "Step 3: Get Your Money",
       description: (
         <>
           <p>
-            Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-            deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-            non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-            sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-            velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-            commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+            Choose how you want to receive your exchanged money. You can opt 
+            for cash delivery to your doorstep or have the funds securely 
+            transferred to your bank account.
+          </p>
+          <p>
+            Our process is fast, secure, and ensures a hassle-free experience 
+            with complete transparency.
           </p>
         </>
       ),
-      badge: "Launch Week",
-      image: "/logo.svg",
+      badge: "Delivery",
+      image: "/transfer.svg",
     },
   ];
+  
 
   return (
     <Section>   
       <Container>
-        <div className="flex flex-col items-center pt-[10vh]">
-          <h3 className="text-1xl md:text-2xl lg:text-3xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white ">
-            Who are we?
-          </h3>
-          <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white ">
-            <Cover> Build amazing websites <br /> at warp speed</Cover>
-          </h1>
+        <div className="flex flex-col items-center pt-[1vh]">
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1,
+              ease: "easeInOut",
+            }}
+            className="text-1xl md:text-2xl lg:text-3xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white"
+          >
+            <Button
+              borderRadius="1.75rem"
+              containerClassName="w-auto min-w-[1rem]"
+              className="flex font-calsans font-light items-center justify-center bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 px-6"
+            >
+            How it works
+            </Button>
+          </motion.h3>
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.2,
+              duration: 1,
+              ease: "easeInOut",
+            }}
+            className="text-4xl md:text-4xl lg:text-6xl font-calsans max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white"
+          >
+           We are dedicated to helping you <Cover> Xchange your currency <br /> at warp speed</Cover>
+          </motion.h1>
         </div>
       </Container><br/><br/>
       <Compo>
@@ -152,14 +177,14 @@ export default function Who() {
                 <p className={twMerge(calsans.className, "text-xl mb-4")}>
                   {item.title}
                 </p>
-
+                <br/>
                 <div className="text-sm  prose prose-sm dark:prose-invert">
                   {item?.image && (
-                    <Image
+                    <StyledImage
                       src={item.image}
                       alt="blog thumbnail"
-                      height="1000"
-                      width="1000"
+                      height="900"
+                      width="900"
                       className="rounded-lg mb-10 object-cover"
                     />
                   )}

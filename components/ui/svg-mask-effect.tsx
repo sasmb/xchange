@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export const MaskContainer = ({
   children,
   revealText,
-  size = 10,
+  size = 50,
   revealSize = 600,
   className,
 }: {

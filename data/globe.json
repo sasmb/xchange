@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "United States",
+        "currency": "USD",
+        "size": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-95.7129, 37.0902]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "United Kingdom",
+        "currency": "GBP",
+        "size": 1.2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.4360, 55.3781]
+      }
+    },
+    {
+      "name": "European Union",
+      "coordinates": [50.8503, 4.3517],
+      "size": 1.4,
+      "currency": "EUR"
+    },
+    {
+      "name": "Japan",
+      "coordinates": [36.2048, 138.2529],
+      "size": 1.3,
+      "currency": "JPY"
+    },
+    {
+      "name": "Singapore",
+      "coordinates": [1.3521, 103.8198],
+      "size": 1.2,
+      "currency": "SGD"
+    },
+    {
+      "name": "Switzerland",
+      "coordinates": [46.8182, 8.2275],
+      "size": 1.1,
+      "currency": "CHF"
+    },
+    {
+      "name": "Australia",
+      "coordinates": [-25.2744, 133.7751],
+      "size": 1.2,
+      "currency": "AUD"
+    },
+    {
+      "name": "Canada",
+      "coordinates": [56.1304, -106.3468],
+      "size": 1.2,
+      "currency": "CAD"
+    },
+    {
+      "name": "China",
+      "coordinates": [35.8617, 104.1954],
+      "size": 1.4,
+      "currency": "CNY"
+    },
+    {
+      "name": "UAE",
+      "coordinates": [23.4241, 53.8478],
+      "size": 1.2,
+      "currency": "AED"
+    }
+  ]
+} 

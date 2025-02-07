@@ -1,7 +1,5 @@
-import { Icon, Link } from "lucide-react";
-import React from "react";
-import styled from "styled-components"
 import Image from 'next/image';
+import styled from "styled-components"
 
 const Section = styled.div`
   display: flex;
