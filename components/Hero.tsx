@@ -4,6 +4,7 @@ import { AuroraBackground } from "./ui/aurora-background";
 import styled from "styled-components"
 import { Logotable } from "./Clientlogo";
 import { Button } from "./ui/moving-border";
+import Header from "./header";
 const Section = styled.div`
   height: 100vh;
   background-color: #000;
@@ -13,6 +14,7 @@ const Section = styled.div`
 export function Hero() {
   return (
     <Section>
+      <Header />
         <AuroraBackground>
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
@@ -43,11 +45,11 @@ export function Hero() {
         <button className="p-[3px] relative">
           <div className="absolute inset-0 bg-gradient-to-r from-sky-500 to-sky-400 rounded-lg" />
           <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-            Buy Crypto
+            Buy
           </div>
         </button>
         <button className="shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] px-8 py-2 bg-[#fff] text-[#696969] rounded-md font-light transition duration-200 ease-linear">
-          Sell Crypto
+          Sell
         </button>
         </div>
         </div>

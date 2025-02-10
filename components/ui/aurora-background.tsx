@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import React, { ReactNode } from "react";
-import Navbar from "../Navbar";
+
 interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {
   children: ReactNode;
   showRadialGradient?: boolean;
@@ -15,9 +15,7 @@ export const AuroraBackground = ({
 }: AuroraBackgroundProps) => {
   return (
     <main>
-      <div className="absolute top-10 left-0 w-full z-40 ">
-        <Navbar />
-      </div>
+
       <div
         className={cn(
           "relative flex flex-col h-[100vh] items-center pt-[25vh]  bg-zinc-50 dark:bg-zinc-900 text-slate-950 transition-bg",

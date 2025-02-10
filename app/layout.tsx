@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { calsans, geist } from "@/fonts/calsans";
+import StyledComponentsRegistry from './registry';
+import Header from "@/components/header";
+import Logo from "@/components/header/Logo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +35,11 @@ export default function RootLayout({
       <body
         className={`${calsans.variable} ${geist.variable} font-geist antialiased`}
       >
-        {children}
+        <StyledComponentsRegistry>
+          <Logo />
+          <Header />
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

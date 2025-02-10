@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import styled from "styled-components"
 
@@ -32,9 +33,7 @@ export default function Navbar() {
   return (
     <Section>
       <Container>
-        <Links className="text-2xl font-bold">
-          CollinsCo.
-        </Links>
+
         <Icons>
           <Image 
             src="/menu.png" 
