@@ -5,6 +5,7 @@ import { calsans, geist } from "@/fonts/calsans";
 import StyledComponentsRegistry from './registry';
 import Header from "@/components/header";
 import Logo from "@/components/header/Logo";
+import { Toaster } from "@/components/ui/toaster"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({
           <Header />
           {children}
         </StyledComponentsRegistry>
+        <Toaster />
       </body>
     </html>
   );

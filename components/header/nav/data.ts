@@ -1,23 +1,23 @@
 export const links = [
     {
         title: "Exchange",
-        href: "components/Contact.tsx"
+        href: "/contact"
     },
     {
         title: "Education",
-        href: "components/Education.tsx"
+        href: "/linkfill"
     },
     {
         title: "Travel",
-        href: "components/Travel.tsx"
+        href: "/linkfill"
     },
     {
         title: "Immigration",
-        href: "components/Immigration.tsx"
+        href: "/linkfill"
     },
     {
         title: "Contact",
-        href: "components/Contact.tsx"
+        href: "/contact"
     }
 ]
 
