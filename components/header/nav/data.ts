@@ -1,41 +1,61 @@
 export const links = [
     {
         title: "Exchange",
-        href: "/"
+        href: "components/Contact.tsx"
     },
     {
         title: "Education",
-        href: "/"
+        href: "components/Education.tsx"
     },
     {
         title: "Travel",
-        href: "/"
+        href: "components/Travel.tsx"
     },
     {
         title: "Immigration",
-        href: "/"
+        href: "components/Immigration.tsx"
     },
     {
         title: "Contact",
-        href: "/"
+        href: "components/Contact.tsx"
     }
 ]
 
 export const footerLinks = [
     {
         title: "Facebook",
-        href: "/"
+        href: "https://www.facebook.com/profile.php?id=61556311485728"
     },
     {
         title: "LinkedIn",
-        href: "/"
+        href: "https://www.linkedin.com/in/samuel-ogbonna-sohae/"
     },
     {
         title: "Instagram",
-        href: "/"
+        href: "https://www.instagram.com/realsamogb.ai/"
     },
     {
         title: "Twitter",
-        href: "/"
+        href: "https://x.com/dreamswerver"
     }
+]
+
+export const navLinks = [
+    {
+        path: "/contact",
+        label: "Contact",
+    },
+    {
+        path: "/education",
+        label: "Education",
+    },
+    {
+        path: "/travel",
+        label: "Travel",
+    },
+    {
+        path: "/immigration",
+        label: "Immigration",
+    },
+
 ]

@@ -33,10 +33,12 @@ const BottomSection = styled.div`
 
 export default function LandingPage() {
   return (
-    <PageContainer
-      className="relative h-[800px]"
-      style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
-    >
+    <div 
+    className='relative h-[800px]'
+    style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
+  >
+    <div className='fixed bottom-0 h-[800px] w-full'>
+    <PageContainer >
       <TopSection>
         <Footer />
       </TopSection>
@@ -44,6 +46,8 @@ export default function LandingPage() {
         <AnimationSection title="Collinsco." />
       </BottomSection>
     </PageContainer>
+    </div>
+    </div>
   )
 }
 

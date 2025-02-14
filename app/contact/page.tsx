@@ -1,7 +1,11 @@
-"use client";
+
 import React from "react";
-import { ContainerScroll } from "./ui/container-scroll-animation";
 import Image from "next/image";
+import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+
+export default function ContactPage() {
+  return <HeroScrollDemo />;
+}
 
 export function HeroScrollDemo() {
   return (
@@ -10,9 +14,9 @@ export function HeroScrollDemo() {
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold text-black dark:text-white">
-              Unleash the power of <br />
+              Get started <br />
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                Scroll Animations
+                Exchanging currency
               </span>
             </h1>
           </>

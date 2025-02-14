@@ -30,7 +30,7 @@ export const Logotable = () => {
 				<div className="grid grid-cols-12 mb-6 md:mb-12">
 					<div className="col-span-12 text-center">
 						<h2 className="text-[25px] leading-none font-bold">
-                            Trusted by individuals and businesses worldwide.
+                            trusted by individuals and businesses worldwide.
 						</h2>
 					</div>
 				</div>

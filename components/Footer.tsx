@@ -86,16 +86,16 @@ export default function Footer() {
             exceptional service.
           </p>
           <SocialLinks>
-            <a href="#">
+            <a href="https://www.facebook.com/profile.php?id=61556311485728">
               <Facebook size={20} />
             </a>
-            <a href="#">
+            <a href="https://x.com/dreamswerver">
               <Twitter size={20} />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/realsamogb.ai/">
               <Instagram size={20} />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/samuel-ogbonna-sohae/">
               <Linkedin size={20} />
             </a>
           </SocialLinks>
@@ -104,13 +104,13 @@ export default function Footer() {
           <h3>Services</h3>
           <ul>
             <li>
-              <a href="#">Currency Exchange</a>
+              <a href="#">Exchange</a>
             </li>
             <li>
-              <a href="#">Cash Delivery</a>
+              <a href="#">Education</a>
             </li>
             <li>
-              <a href="#">Bank Transfer</a>
+              <a href="#">Travel & Immigration</a>
             </li>
             <li>
               <a href="#">Rate Alerts</a>
