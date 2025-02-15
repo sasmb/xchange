@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 const clientLogos = [
 	{
@@ -36,9 +37,11 @@ export const Logotable = () => {
 				</div>
 				<div className="flex flex-wrap items-center justify-center gap-6">
 					{clientLogos.map((client, i) => (
-						<img
+						<Image 
 							src={client.logo}
 							alt={client.alt}
+							width={120}
+							height={40}
 							className="max-h-11 h-auto max-w-full grayscale mx-4 transition-all duration-500 ease-in-out hover:grayscale-0 pr-12 mt-6"
 							key={i}
 						/>
