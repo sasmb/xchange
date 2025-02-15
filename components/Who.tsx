@@ -161,7 +161,7 @@ export default function Who() {
             }}
             className="text-4xl md:text-4xl lg:text-6xl font-calsans max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white"
           >
-           We are dedicated to helping you <Cover> Xchange your currency <br /> at warp speed</Cover>
+           We&apos;re dedicated to helping you <Cover> Xchange your currency <br /> at warp speed</Cover>
           </motion.h1>
         </div>
       </Container><br/><br/>

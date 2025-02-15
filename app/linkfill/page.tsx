@@ -15,7 +15,7 @@ export function TypewriterEffectSmoothDemo() {
       text: "education, ",
     },
     {
-      text: "travel & exchange",
+      text: "travel &amp; exchange",
     },
     {
       text: "in seconds.",

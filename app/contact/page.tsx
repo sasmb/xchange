@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
+import dynamic from 'next/dynamic'
+
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -46,29 +47,12 @@ export function HeroScrollDemo() {
           </>
         }
       >
-        <Image
-          src={`/dashboard.jpg`}
-          alt="hero"
-          height={720}
-          width={1400}
-          className="mx-auto rounded-2xl object-contain w-full h-full"
-          draggable={false}
-        />
-              <div className="flex justify-center items-center">
-        <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
-          <ArrowLeftRight className="h-8 w-8 text-white" />
-        </button>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        
+        <div className="flex justify-center items-center">
+        <video src={require('../../public/video.mp4')} autoPlay muted loop />
       </div>
       </ContainerScroll>
       <div className="flex justify-center items-center">
-        <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
+        <button className="bg-black text-white px-4 py-2 rounded-md">
           <ArrowLeftRight className="h-8 w-8 text-white" />
         </button>
         <br/>
@@ -83,11 +67,11 @@ export function HeroScrollDemo() {
       <CardContent className="p-12 h-full">
         <div className="grid grid-cols-2 gap-12 h-full">
           <div className="space-y-8">
-            <h1 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-200">
+            <h1 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-black to-white-200">
               How Currency Exchange Works
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Currency exchange is the process of trading one country's money for another's at an agreed rate.
+              Currency exchange is the process of trading one country&apos;s money for another&apos;s at an agreed rate.
             </p>
             <div className="grid grid-cols-1 gap-6">
               {steps.map((step, index) => (
@@ -144,7 +128,7 @@ export function HeroScrollDemo() {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Example</h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      If the USD to EUR rate is 1:0.85, then $100 USD would give you €85 EUR. Always check for the most
+                      If the USD to EUR rate is 1:0.85, then &dollar;100 USD would give you &euro;85 EUR. Always check for the most
                       current rates before exchanging.
                     </p>
                   </div>
